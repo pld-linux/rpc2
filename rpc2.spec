@@ -7,6 +7,7 @@ Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
+# Source0-md5:	7be32245001641a0a7712fe11987b0d7
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
