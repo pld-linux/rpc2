@@ -1,0 +1,4 @@
+- updated to 1.8,
+- simplifications in %files,
+- spec adapterized,
+- added flex to Buildrequires.
