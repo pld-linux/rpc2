@@ -2,12 +2,12 @@ Summary:	RPC2 library
 Summary(pl):	Biblioteka RPC2
 Summary(pt_BR):	Biblioteca RPC2
 Name:		rpc2
-Version:	1.15
+Version:	1.17
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
-# Source0-md5:	7be32245001641a0a7712fe11987b0d7
+# Source0-md5:	9cdc777417494a2297219ef21688408c
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -64,17 +64,18 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 %build
 rm -f missing
 %{__libtoolize}
-%{__autoheader}
 %{__aclocal}
-%{__automake}
 %{__autoconf}
+%{__autoheader}
+%{__automake}
 %configure
 %{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
-%{__make} DESTDIR=$RPM_BUILD_ROOT install
+%{__make} \
+	DESTDIR=$RPM_BUILD_ROOT install
 
 %clean
 rm -rf $RPM_BUILD_ROOT
