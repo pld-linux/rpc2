@@ -65,8 +65,8 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 %build
 rm -f missing
 %{__libtoolize}
-autoheader
-aclocal
+%{__autoheader}
+%{__aclocal}
 %{__automake}
 %{__autoconf}
 %configure
