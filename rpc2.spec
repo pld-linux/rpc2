@@ -44,6 +44,7 @@ Static libraries for developing programs using the RPC2 library.
 %setup -q
 
 %build
+rm -f missing
 libtoolize --copy --force
 autoheader
 aclocal
