@@ -1,12 +1,17 @@
 Summary:	RPC2 library
+Summary(pl):	Biblioteka RPC2
 Name:		rpc2
 Version:	1.12
-Release:	1
+Release:	2
 License:	GPL
-Group:		Development/Libraries
-Group(de):	Entwicklung/Libraries
-Group(fr):	Development/Librairies
-Group(pl):	Programowanie/Biblioteki
+Group:		Libraries
+Group(de):	Libraries
+Group(es):	Bibliotecas
+Group(fr):	Librairies
+Group(pl):	Biblioteki
+Group(pt_BR):	Bibliotecas
+Group(ru):	Библиотеки
+Group(uk):	Б╕бл╕отеки
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -18,27 +23,46 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The RPC2 library.
 
+%description -l pl
+Biblioteka RPC2.
+
 %package devel
 Summary:	RPC2 library development files
+Summary(pl):	Pliki dla programistСw u©ywaj╠cych biblioteki RPC2
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name} = %{version}
 
 %description devel
-Headers and libraries for developing programs using the RPC2 library.
+Headers for developing programs using the RPC2 library.
+
+%description devel -l pl
+Pliki nagЁСwkowe do tworzenia programСw z u©yciem RPC2.
 
 %package static
 Summary:	RPC2 static library development files
+Summary(pl):	Biblioteka statyczna RPC2
 Group:		Development/Libraries
 Group(de):	Entwicklung/Libraries
+Group(es):	Desarrollo/Bibliotecas
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
+Group(pt_BR):	Desenvolvimento/Bibliotecas
+Group(ru):	Разработка/Библиотеки
+Group(uk):	Розробка/Б╕бл╕отеки
 Requires:	%{name}-devel = %{version}
 
 %description static
 Static libraries for developing programs using the RPC2 library.
+
+%description static -l pl
+Statyczne biblioteki RPC2.
 
 %prep
 %setup -q
