@@ -8,7 +8,10 @@ Group(de):	Entwicklung/Libraries
 Group(fr):	Development/Librairies
 Group(pl):	Programowanie/Biblioteki
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
+BuildRequires:	autoconf
+BuildRequires:	automake
 BuildRequires:	flex
+BuildRequires:	libtool
 BuildRequires:	lwp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -41,9 +44,9 @@ Static libraries for developing programs using the RPC2 library.
 %setup -q
 
 %build
+libtoolize --copy --force
 autoheader
 aclocal
-libtoolize
 automake --copy --add-missing
 autoconf
 %configure --prefix=%{_prefix}
