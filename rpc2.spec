@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
+Patch0:		%{name}-LIBTOOL_LDFLAGS.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -45,6 +46,7 @@ Statyczne biblioteki RPC2.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
 rm -f missing
