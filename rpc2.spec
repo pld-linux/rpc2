@@ -48,12 +48,14 @@ libtoolize
 automake --copy --add-missing
 autoconf
 %configure --prefix=%{_prefix}
-%{__make} OPTFLAGS="$RPM_OPT_FLAGS"
+%{__make} OPTFLAGS="%{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
 
 %{__make} DESTDIR=$RPM_BUILD_ROOT install
+
+gzip -9nf NEWS
 
 %clean
 rm -rf $RPM_BUILD_ROOT
@@ -63,7 +65,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc NEWS INSTALL COPYING
+%doc NEWS.gz
 %attr(755,root,root) %{_bindir}/filcon
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
