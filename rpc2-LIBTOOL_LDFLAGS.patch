@@ -1,0 +1,12 @@
+diff -ur rpc2-1.12/acinclude.m4 rpc2-1.12.ok/acinclude.m4
+--- rpc2-1.12/acinclude.m4	Tue May  7 00:56:06 2002
++++ rpc2-1.12.ok/acinclude.m4	Mon May  6 23:32:45 2002
+@@ -17,7 +17,7 @@
+ dnl test the cross compilation platform and adjust default settings
+ 
+ AC_DEFUN(CODA_SETUP_BUILD,
+-[AC_SUBST(LIBTOOL_LDFLAGS)
++[
+ case ${target} in
+   djgpp | dos )  target=i386-pc-msdos 
+ 		 dosmmap=false ;;
