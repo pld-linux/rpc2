@@ -1,9 +1,10 @@
 Summary:	RPC2 library
 Summary(pl):	Biblioteka RPC2
+Summary(pt_BR):	Biblioteca RPC2
 Name:		rpc2
 Version:	1.12
 Release:	2
-License:	GPL
+License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
 Patch0:		%{name}-LIBTOOL_LDFLAGS.patch
@@ -13,18 +14,24 @@ BuildRequires:	flex
 BuildRequires:	libtool
 BuildRequires:	lwp-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
+Obsoletes:	librpc21
 
 %description
-The RPC2 library.
+The RPC2 library. RPC2 Library, used with the coda file system.
 
 %description -l pl
 Biblioteka RPC2.
 
+%description -l pt_BR
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
+
 %package devel
 Summary:	RPC2 library development files
 Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki RPC2
+Summary(pt_BR):	Arquivos de inclusão e bibliotecas para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}
+Obsoletes:	librpc21-devel
 
 %description devel
 Headers for developing programs using the RPC2 library.
@@ -32,9 +39,13 @@ Headers for developing programs using the RPC2 library.
 %description devel -l pl
 Pliki nag³ówkowe do tworzenia programów z u¿yciem RPC2.
 
+%description devel -l pt_BR
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
+
 %package static
 Summary:	RPC2 static library development files
 Summary(pl):	Biblioteka statyczna RPC2
+Summary(pt_BR):	Biblioteca estática para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}
 
@@ -43,6 +54,9 @@ Static libraries for developing programs using the RPC2 library.
 
 %description static -l pl
 Statyczne biblioteki RPC2.
+
+%description static -l pt_BR
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 
 %prep
 %setup -q
@@ -53,10 +67,10 @@ rm -f missing
 libtoolize --copy --force
 autoheader
 aclocal
-automake --copy --add-missing
+automake -a -c -f
 autoconf
-%configure --prefix=%{_prefix}
-%{__make} OPTFLAGS="%{rpmcflags}"
+%configure
+%{__make}
 
 %install
 rm -rf $RPM_BUILD_ROOT
