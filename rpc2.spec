@@ -2,12 +2,11 @@ Summary:	RPC2 library
 Summary(pl):	Biblioteka RPC2
 Summary(pt_BR):	Biblioteca RPC2
 Name:		rpc2
-Version:	1.12
+Version:	1.14
 Release:	2
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
-Patch0:		%{name}-LIBTOOL_LDFLAGS.patch
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -60,7 +59,6 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 rm -f missing
