@@ -2,12 +2,12 @@ Summary:	RPC2 library
 Summary(pl):	Biblioteka RPC2
 Summary(pt_BR):	Biblioteca RPC2
 Name:		rpc2
-Version:	1.27
-Release:	2
+Version:	1.28
+Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
-# Source0-md5:	58b84c511e1aae8c41d40cc935d59f0b
+# Source0-md5:	851fe1bd5a23e255cb069f3776a61761
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
@@ -86,7 +86,7 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc AUTHORS ChangeLog NEWS README* 
+%doc AUTHORS ChangeLog NEWS README*
 %attr(755,root,root) %{_bindir}/filcon
 %attr(755,root,root) %{_libdir}/lib*.so.*.*
 
