@@ -1,0 +1,5 @@
+- added librpc21{,-devel} to Obsoletes for allow upgrade from MDK,
+- merge translations from Conectiva,
+- remove OPTFLAGS="%{rpmcflags}" from make parameters,
+- fised License: LGPL,
+- s/--copy --add-missing/-a -c -f/ in automake parameters.
