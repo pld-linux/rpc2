@@ -14,8 +14,8 @@ BuildRequires:	flex
 BuildRequires:	libtool
 BuildRequires:	lwp-devel
 BuildRequires:	readline-devel
-BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Obsoletes:	librpc21
+BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 The RPC2 library. RPC2 Library, used with the coda file system.
@@ -31,7 +31,7 @@ Summary:	RPC2 library development files
 Summary(pl):	Pliki dla programistów u¿ywaj±cych biblioteki RPC2
 Summary(pt_BR):	Arquivos de inclusão e bibliotecas para desenvolvimento com a RPC2
 Group:		Development/Libraries
-Requires:	%{name} = %{version}
+Requires:	%{name} = %{version}-%{release}
 Obsoletes:	librpc21-devel
 
 %description devel
@@ -48,7 +48,7 @@ Summary:	RPC2 static library development files
 Summary(pl):	Biblioteka statyczna RPC2
 Summary(pt_BR):	Biblioteca estática para desenvolvimento com a RPC2
 Group:		Development/Libraries
-Requires:	%{name}-devel = %{version}
+Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libraries for developing programs using the RPC2 library.
