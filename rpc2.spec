@@ -1,6 +1,6 @@
 Summary:	RPC2 library
-Summary(pl):	Biblioteka RPC2
-Summary(pt_BR):	Biblioteca RPC2
+Summary(pl.UTF-8):   Biblioteka RPC2
+Summary(pt_BR.UTF-8):   Biblioteca RPC2
 Name:		rpc2
 Version:	2.2
 Release:	1
@@ -20,16 +20,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 The RPC2 library. RPC2 Library, used with the coda file system.
 
-%description -l pl
+%description -l pl.UTF-8
 Biblioteka RPC2.
 
-%description -l pt_BR
-Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuÌdo Coda.
+%description -l pt_BR.UTF-8
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribu√≠do Coda.
 
 %package devel
 Summary:	RPC2 library development files
-Summary(pl):	Pliki dla programistÛw uøywaj±cych biblioteki RPC2
-Summary(pt_BR):	Arquivos de inclus„o e bibliotecas para desenvolvimento com a RPC2
+Summary(pl.UTF-8):   Pliki dla programist√≥w u≈ºywajƒÖcych biblioteki RPC2
+Summary(pt_BR.UTF-8):   Arquivos de inclus√£o e bibliotecas para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	librpc21-devel
@@ -37,27 +37,27 @@ Obsoletes:	librpc21-devel
 %description devel
 Headers for developing programs using the RPC2 library.
 
-%description devel -l pl
-Pliki nag≥Ûwkowe do tworzenia programÛw z uøyciem RPC2.
+%description devel -l pl.UTF-8
+Pliki nag≈Ç√≥wkowe do tworzenia program√≥w z u≈ºyciem RPC2.
 
-%description devel -l pt_BR
-Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuÌdo Coda.
+%description devel -l pt_BR.UTF-8
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribu√≠do Coda.
 
 %package static
 Summary:	RPC2 static library development files
-Summary(pl):	Biblioteka statyczna RPC2
-Summary(pt_BR):	Biblioteca est·tica para desenvolvimento com a RPC2
+Summary(pl.UTF-8):   Biblioteka statyczna RPC2
+Summary(pt_BR.UTF-8):   Biblioteca est√°tica para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
 %description static
 Static libraries for developing programs using the RPC2 library.
 
-%description static -l pl
+%description static -l pl.UTF-8
 Statyczne biblioteki RPC2.
 
-%description static -l pt_BR
-Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuÌdo Coda.
+%description static -l pt_BR.UTF-8
+Biblioteca RPC2. Utilizada pelo sistema de arquivos distribu√≠do Coda.
 
 %prep
 %setup -q
