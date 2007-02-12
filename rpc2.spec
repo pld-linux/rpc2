@@ -1,6 +1,6 @@
 Summary:	RPC2 library
-Summary(pl.UTF-8):   Biblioteka RPC2
-Summary(pt_BR.UTF-8):   Biblioteca RPC2
+Summary(pl.UTF-8):	Biblioteka RPC2
+Summary(pt_BR.UTF-8):	Biblioteca RPC2
 Name:		rpc2
 Version:	2.2
 Release:	1
@@ -28,8 +28,8 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 
 %package devel
 Summary:	RPC2 library development files
-Summary(pl.UTF-8):   Pliki dla programistów używających biblioteki RPC2
-Summary(pt_BR.UTF-8):   Arquivos de inclusão e bibliotecas para desenvolvimento com a RPC2
+Summary(pl.UTF-8):	Pliki dla programistów używających biblioteki RPC2
+Summary(pt_BR.UTF-8):	Arquivos de inclusão e bibliotecas para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name} = %{version}-%{release}
 Obsoletes:	librpc21-devel
@@ -45,8 +45,8 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 
 %package static
 Summary:	RPC2 static library development files
-Summary(pl.UTF-8):   Biblioteka statyczna RPC2
-Summary(pt_BR.UTF-8):   Biblioteca estática para desenvolvimento com a RPC2
+Summary(pl.UTF-8):	Biblioteka statyczna RPC2
+Summary(pt_BR.UTF-8):	Biblioteca estática para desenvolvimento com a RPC2
 Group:		Development/Libraries
 Requires:	%{name}-devel = %{version}-%{release}
 
