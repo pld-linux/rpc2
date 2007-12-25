@@ -2,12 +2,12 @@ Summary:	RPC2 library
 Summary(pl.UTF-8):	Biblioteka RPC2
 Summary(pt_BR.UTF-8):	Biblioteca RPC2
 Name:		rpc2
-Version:	2.5
+Version:	2.6.1
 Release:	1
 License:	LGPL
 Group:		Libraries
 Source0:	ftp://ftp.coda.cs.cmu.edu/pub/rpc2/src/%{name}-%{version}.tar.gz
-# Source0-md5:	bb3119a6cc2a1ddafdadefb6a805fa5c
+# Source0-md5:	458a4c4473ba780cc902bef24fe5da32
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	flex
