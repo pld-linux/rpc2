@@ -62,7 +62,7 @@ Biblioteca RPC2. Utilizada pelo sistema de arquivos distribuído Coda.
 
 %prep
 %setup -q
-#%patch0 -p1
+#%%patch0 -p1
 
 %build
 #rm -f missing
